@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+float a,b,c,s,area;//定义三边和面积的类型
+printf("请输入三角形三边边长:");
+scanf("%f%f%f",&a,&b,&c);
+if(a+b>c&&a+c>b&&b+c>a)
+{
+s=(a+b+c)/2;
+area=sqrt(s*(s-a)*(s-b)*(s-c));
+printf("a=%.2f,b=%.2f,c=%.2f\n",a,b,c);
+printf("area=%.4f\n",area);
+}
+else
+
+printf("不是三角形");
+
+
+}

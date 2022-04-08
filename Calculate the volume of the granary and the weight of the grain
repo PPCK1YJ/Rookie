@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<math.h>
+main(void)
+{
+   double c,h1,h2,t,r,s,x,v;
+   float w;
+   const double  PI=3.14;
+   {
+   c=62.8;
+   x=2*PI;
+   r=c/x;
+	   printf("底面半径=%.2f米\n",r);
+   }
+   {
+s=PI*r*r;
+printf("底面面积=%.2f平方米\n",s);
+}
+   {
+	   h1=2,h2=0.2;
+   v=s*h1+s*h2/3;
+   printf("粮食体积=%.2f立方米\n",v);
+   }
+   {
+	w=10*v;
+   printf("粮食总体积=%.2f立方米\n",w);
+   }
+   {
+   int t=600;
+   double m;
+   m=10*t*v/1000;
+   printf("粮食总重量=%f千克\n",m);
+   }
+   return 0;
+}

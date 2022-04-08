@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+main (void)
+{
+int a,b,c,d;
+double m,s;
+printf("请输入四个值,中间用空格分隔,输入p运行程序:");
+scanf("%d%d%d%d%",&a,&b,&c,&d);
+s=(a+b)*2;
+m=a+b+c+d;
+printf("s=%f\n",s);
+printf("m=%f\n",m);
+return 0;
+}
